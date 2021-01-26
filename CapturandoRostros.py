@@ -11,9 +11,9 @@ if not os.path.exists(personPath):
     print('Carpeta creada: ',personPath)
     os.makedirs(personPath)
 
-#cap = cv2.VideoCapture("yuuki.mp4")
+#cap = cv2.VideoCapture("yuuki.mp4")#Videos de prueba 
 #cap = cv2.VideoCapture("marisol.mp4")
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)#Entrara de video en tiempo real
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 count = 0
