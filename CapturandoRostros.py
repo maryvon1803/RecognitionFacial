@@ -35,7 +35,8 @@ while True:
     cv2.imshow('frame',frame)
 
     k =  cv2.waitKey(1)
-    if k == 27 or count >= 400:
+    if k == 27 or count >= 300:
+    #if k == 27 or count >= 400:
         break
 
 cap.release()
