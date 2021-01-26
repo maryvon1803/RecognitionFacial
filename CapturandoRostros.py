@@ -4,8 +4,8 @@ import os
 
 personName = "yuuki"
 #personName = "marisol"
-dataPath = "/home/pi/Desktop/Rostros/Reconocimiento Facial/Datos"#Cambia a la ruta donde hayas almacenado Data
-personPath = dataPath + '/' + personName
+dataPath = "/home/pi/Desktop/Rostros/Reconocimiento Facial/Datos"#Ruta en donde vamos a guardar las capturas
+personPath = dataPath + '/' + personName 
 
 if not os.path.exists(personPath):
     print('Carpeta creada: ',personPath)
