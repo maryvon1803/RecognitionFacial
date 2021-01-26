@@ -36,7 +36,7 @@ while True:
 
     k =  cv2.waitKey(1)
     if k == 27 or count >= 300:
-    #if k == 27 or count >= 400:
+    #if k == 27 or count >= 450:#cuando queremos ingresar un reconocimiento facila por medio de una camara web en tiempo real con esta instruccion tomara 150 capturas mas
         break
 
 cap.release()
