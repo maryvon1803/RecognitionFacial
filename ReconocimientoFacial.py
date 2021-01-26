@@ -1,7 +1,7 @@
 import cv2
 import os
 
-dataPath = "/home/pi/Desktop/Rostros/Reconocimiento Facial/Datos" #Ruta en donde vamos a guardar las la listas de los datos
+dataPath = "/home/pi/Desktop/Rostros/Reconocimiento Facial/Datos" #Ruta en donde vamos a guardar las listas de los datos
 imagePaths = os.listdir(dataPath)
 print('imagePaths=',imagePaths)
 
@@ -15,7 +15,7 @@ face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('modeloLBPHFace.xml')
 
 cap = cv2.VideoCapture(0)#Entrarda de Video en timepo real
-#cap = cv2.VideoCapture('Imagenes y videos de Prueba/salvador.mp4')
+#cap = cv2.VideoCapture('Imagenes y videos de Prueba/salvador.mp4')#videos de prueba
 #cap = cv2.VideoCapture('Imagenes y videos de Prueba/marisol.mp4')
 #cap = cv2.VideoCapture('Imagenes y videos de Prueba/marisol2.mp4')
 #cap = cv2.VideoCapture('Imagenes y videos de Prueba/yuuki2.mp4')
